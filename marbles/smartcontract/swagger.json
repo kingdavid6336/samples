@@ -28,6 +28,22 @@
             "schema": {
               "$ref": "#/definitions/InitMarbleRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -81,6 +97,22 @@
             "schema": {
               "$ref": "#/definitions/MarbleTransferRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -134,6 +166,22 @@
             "schema": {
               "$ref": "#/definitions/MarbleColorTransferRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -187,6 +235,22 @@
             "schema": {
               "$ref": "#/definitions/ReadMarbleRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -240,6 +304,22 @@
             "schema": {
               "$ref": "#/definitions/QueryOwnerRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -293,6 +373,22 @@
             "schema": {
               "$ref": "#/definitions/QueryMarblesRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -346,6 +442,22 @@
             "schema": {
               "$ref": "#/definitions/HistoryMarbleRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "responses": {
@@ -399,6 +511,22 @@
             "schema": {
               "$ref": "#/definitions/RangeRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -452,6 +580,22 @@
             "schema": {
               "$ref": "#/definitions/DeleteRequest"
             }
+          },
+          {
+            "in": "query",
+            "name": "Async",
+            "type": "boolean",
+            "required": false,
+            "description": "Call this request asynchronously without waiting for response.",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "Timeout",
+            "type": "number",
+            "required": false,
+            "description": "Request timeout in millisecond.",
+            "default": 5000
           }
         ],
         "security": [
@@ -480,10 +624,114 @@
           }
         }
       }
+    },
+    "/results/{ResultId}": {
+      "get": {
+        "summary": "Get Result for a resultId.",
+        "description": "This endpoint returns the result of previously submitted api request.",
+        "tags": [
+          "Results"
+        ],
+        "operationId": "Result",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "ResultId",
+            "type": "string",
+            "required": false,
+            "description": "Returned in previous Query/Invoke/Participant Operation.",
+            "default": ""
+          }
+        ],
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Processing complete",
+            "schema": {
+              "$ref": "#/definitions/FinalTransactionResponse"
+            }
+          },
+          "202": {
+            "description": "Processing pending",
+            "schema": {
+              "$ref": "#/definitions/PendingTransactionResponse"
+            }
+          },
+          "401": {
+            "description": "Missing or invalid API Token"
+          },
+          "403": {
+            "description": "Forbidden/Insufficient permissions to perform this operation"
+          },
+          "404": {
+            "description": "Result Id not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
     }
   },
   "definitions": {
-
+    "PendingTransactionResponse": {
+			"title": "Pending Transaction Response",
+			"description": "",
+			"type": "object",
+			"properties": {
+				"resultURL": {
+					"description": "URL to use for fetching the result",
+					"type": "string"
+				},
+				"resultId": {
+					"description": "Result Id",
+					"type": "string"
+				}
+			},
+			"required": [
+				"resultId",
+				"resultURL"
+			],
+			"example": {
+				"resultURL": "string",
+				"resultId": "string"
+			}
+		},
+		"FinalTransactionResponse": {
+			"title": "Final Transaction Response",
+			"description": "",
+			"type": "object",
+			"properties": {
+				"requestType": {
+					"title": "Request Type",
+					"description": "Result for the type of request",
+					"type": "string"
+				},
+				"result": {
+					"title": "Specific Response Result",
+					"description": "The Response result appropriate for original API request",
+					"type": "object"
+				}
+			},
+			"required": [
+				"requestType",
+				"result"
+			],
+			"example": {
+				"requestType": "string",
+				"result": {}
+			}
+		},
     "InitMarbleRequest": {
       "title": "Init Marble Request",
       "description": "Request to Initialize Marble - Name, Color, Size, Owner",
@@ -493,9 +741,13 @@
         "description": "Name, Color, Size, Owner",
         "type": "string"
       },
-      "example": ["name", "color", "2", "owner1"]
+      "example": [
+        "name",
+        "color",
+        "2",
+        "owner1"
+      ]
     },
-
     "MarbleTransferRequest": {
       "title": "Marble Transfer Request",
       "description": "Request to Transfer Marble - Name, Owner",
@@ -505,9 +757,11 @@
         "description": "Name, Owner",
         "type": "string"
       },
-      "exapmle": ["Name", "Owner"]
+      "exapmle": [
+        "Name",
+        "Owner"
+      ]
     },
-
     "MarbleColorTransferRequest": {
       "title": "Marble Transfer based on Color",
       "description": "Transfer Marble based on Color",
@@ -517,9 +771,11 @@
         "description": "Color, Owner",
         "type": "string"
       },
-      "example": ["Color", "Owner"]
+      "example": [
+        "Color",
+        "Owner"
+      ]
     },
-
     "ReadMarbleRequest": {
       "title": "Read Marble Request",
       "description": "Read Marble Request",
@@ -529,9 +785,10 @@
         "description": "Marble Name",
         "type": "string"
       },
-      "example": ["Name"]
+      "example": [
+        "Name"
+      ]
     },
-
     "QueryOwnerRequest": {
       "title": "Query by Owner Request",
       "description": "Query by Owner Request",
@@ -541,9 +798,10 @@
         "description": "Owner Name",
         "type": "string"
       },
-      "example": ["Owner Name"]
+      "example": [
+        "Owner Name"
+      ]
     },
-
     "QueryMarblesRequest": {
       "title": "Query Request",
       "description": "Selector criteria for querying marbles",
@@ -553,9 +811,14 @@
         "description": "Selector criteria JSON for querying",
         "type": "json"
       },
-      "example": [{"selector": {"name": "marble name"}}]
+      "example": [
+        {
+          "selector": {
+            "name": "marble name"
+          }
+        }
+      ]
     },
-
     "HistoryMarbleRequest": {
       "title": "Marble History Request",
       "description": "Marble History Request",
@@ -565,9 +828,10 @@
         "description": "Marble Name",
         "type": "string"
       },
-      "example": ["Name"]
+      "example": [
+        "Name"
+      ]
     },
-
     "RangeRequest": {
       "title": "Range Request",
       "description": "Range Request",
@@ -577,9 +841,11 @@
         "description": "Start and End Key for Range",
         "type": "string"
       },
-      "example": ["StartKey", "EndKey"]
+      "example": [
+        "StartKey",
+        "EndKey"
+      ]
     },
-
     "DeleteRequest": {
       "title": "Delete Request",
       "description": "Delete Request",
@@ -589,7 +855,9 @@
         "description": "Marble Name",
         "type": "string"
       },
-      "example": ["Name"]
+      "example": [
+        "Name"
+      ]
     }
   },
   "securityDefinitions": {
