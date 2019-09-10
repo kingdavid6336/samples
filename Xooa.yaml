@@ -22,6 +22,18 @@ Apps:
     Description: Xooa Marbles
     path: /marbles/smartcontract
     language: go
+  Xooa-Balance-Transfer-Node:
+    Name: Balance Transfer
+    Description: Xooa Balance Transfer
+    path: /balance-transfer-node
+    language: node
+    InitArgs: "[\"a\", \"200\", \"b\",\"100\"]"
+  Xooa-Balance-Transfer-Java:
+    Name: Balance Transfer
+    Description: Xooa Balance Transfer
+    path: /balance-transfer-java
+    language: java
+    InitArgs: "[\"a\", \"200\", \"b\",\"100\"]"
   Xooa-Ethereum-Get-Set:
     Name: Ethereum Smart Contract
     Description: Solidity Get Set Smart Contract for Ethereum
