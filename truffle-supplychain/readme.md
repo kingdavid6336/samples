@@ -5,7 +5,7 @@
   * addOrder
   * isExistingOrder
   * getOrderCount
-  *	getOrderIdAtIndex
+  * getOrderIdAtIndex
   * getOrderById
 
 #### addOrder
