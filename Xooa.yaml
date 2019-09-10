@@ -27,7 +27,7 @@ Apps:
     Description: Xooa Balance Transfer
     path: /balance-transfer-node
     language: node
-    InitArgs: "[\"a\",\"b\",\"100\"]""
+    InitArgs: "[\"a\",\"b\",\"100\"]"
   Xooa-Balance-Transfer-Java:
     Name: Balance Transfer
     Description: Xooa Balance Transfer
