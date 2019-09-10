@@ -28,3 +28,11 @@ Apps:
     path: /ethereum/smartcontract/GetSetContract.sol
     language: solidity
     README: https://github.com/Xooa/samples/blob/master/ethereum/README.md
+  Xooa-SupplyChain-Truffle:
+    Name: Supply Chain Smart Contract
+    Description: Truffle Framework Supply chain Smart Contract
+    path: /truffle-supplychain/Solidity/
+    mainSolFile: SupplyChainLogContract
+    language: solidity
+    truffle: true
+    README: https://github.com/sagarxooa/truffle3-frontend-example/blob/master/README.md
