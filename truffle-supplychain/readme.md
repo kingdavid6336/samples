@@ -9,25 +9,25 @@
   * getOrderById
 
 #### addOrder
-addOrder method is used to store order in the ledger.
-This method creates a transaction in the blockchain ledger and stores the key value pair.
-If it succeeds in creating the transaction it returns a response with transactionId
+addOrder method creates a new order in the ledger.
+This method creates a transaction in the blockchain ledger and stores the key-value pair.
+If it succeeds in creating the transaction, it returns a response with transactionId.
 
 #### isExistingOrder
-isExistingOrder method is used to verify order already exists in ledger.
-This method expects a single argument as the orderId whose existance is to check.
-If it succeeds it returns a response as true.
+isExistingOrder method verifies if order already exists in the ledger.
+This method expects a single argument as the orderId whose existence is to be checked.
+If it succeeds, it returns a response as boolean true.
 
 #### getOrderCount
-getOrderCount method is used to fetch all count if all the orders
-If it succeeds it returns a response with total orders count
+getOrderCount method fetches total count of the orders.
+If it succeeds, it returns a response with count of total orders.
 
 #### getOrderIdAtIndex
-getOrderIdAtIndex method is used to fetch the orderId at given index
-This method expects a single argument as a index
-If it succeeds it returns a response with orderId at given index
+getOrderIdAtIndex method fetches the orderId at a given index.
+This method expects a single argument as the index.
+If it succeeds, it returns a response with orderId at the given index.
 
 #### getOrderById
-getOrderById method is used to fetch the details about the given orderId
-This method expects a single argument as orderId whose details want to fetch
-If it succeeds it returns a response with details of given orderId
+getOrderById method fetches the details for the given orderId
+This method expects a single argument as orderId.
+If it succeeds, it returns a response with order details of the given orderId.
