@@ -35,4 +35,4 @@ Apps:
     mainSolFile: SupplyChainLogContract
     language: solidity
     truffle: true
-    README: https://github.com/sagarxooa/truffle3-frontend-example/blob/master/README.md
+    README: https://github.com/Xooa/samples/blob/master/README.md
