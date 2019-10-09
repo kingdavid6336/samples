@@ -350,7 +350,7 @@
 				"type": "string"
 			},
 			"example": [ "a"]
-		},
+		}
 	},
 	"securityDefinitions": {
 		"Bearer": {
