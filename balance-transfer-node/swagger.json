@@ -9,7 +9,7 @@
 				"summary": "Transfer account balance",
 				"description": "",
 				"tags": [
-					"Get-Set"
+					"balance-transfer"
 				],
 				"operationId": "invoke",
 				"consumes": [
@@ -78,7 +78,7 @@
 				"summary": "Get account balance",
 				"description": "",
 				"tags": [
-					"Get-Set"
+					"balance-transfer"
 				],
 				"operationId": "query",
 				"consumes": [
@@ -147,7 +147,7 @@
 				"summary": "Delete the state",
 				"description": "",
 				"tags": [
-					"Get-Set"
+					"balance-transfer"
 				],
 				"operationId": "delete",
 				"consumes": [
