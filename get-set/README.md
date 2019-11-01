@@ -52,7 +52,7 @@ It returns the chaincode name and the version number for it.
 
 ## Explore the get-set smart Contract end-points
 
-1. Go to the **Details** tab, and then click **Explore API's**.
+1. Go to the **API** tab, and then click **Explore APIs**.
 
 2. Enter **API Token** in the field in navigation pane.
 
