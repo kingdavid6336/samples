@@ -38,14 +38,14 @@ If it succeeds in creating the transaction it returns a response with key value 
    > **Tip:**  to regenerate the API token: 
    >
    > 1. Go to the **Identities** tab in the App. 
-   > 2. Next to the ID, select **Actions**.
+   > 2. Click **Actions** for the identity for which token is to be regenerated.
    > 3. Select **Regenerate API Token**, and then select **Generate**.
 
 
 
 ## Explore the Xooa-Ethereum-Get-Set smart Contract end-points
 
-1. Go to the **Details** tab, and then click **Explore API's**.
+1. Go to the **API** tab, and then click **Explore APIs**.
 
 2. Enter **API Token** in the field in navigation pane.
 

@@ -757,7 +757,7 @@
         "description": "Name, Owner",
         "type": "string"
       },
-      "exapmle": [
+      "example": [
         "Name",
         "Owner"
       ]
