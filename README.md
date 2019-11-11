@@ -38,6 +38,7 @@ Xooa provides a permanent cloud end-point for the smart contract, enabling cloud
 
 7. Copy and store the **API Token** value. You need it to authorize API requests. API Token cannot be dispalyed after you closed the window, but it may get regenerated. 
 
+> **Note:** Xooa.yaml is an optional configuration file used by Xooa platform to configure smart contracts. This file should be in the root directory of the Repo, if being used. This file tells Xooa the programming language, blockchain implementation, and path of the smart contract.
 ___
 
 
