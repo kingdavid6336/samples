@@ -109,3 +109,20 @@ This method expects an argument `[ "<name>" ]`.
 6. Navigate to **Transactions** tab.
 
 7. You can expand the data field to see your transactions.
+
+
+## What is swagger.json and it's purpose
+
+Swagger is used to simplify API development and is used by Xooa for defining REST APIs. 
+Using swagger Xooa provides you an interface to make API requests.
+Place **swagger.json** file along with your Smart Contract and Xooa will pick it up while deploying and will integrate it with your app.
+
+### Steps to access [swagger](https://docs.xooa.com/API.html)
+
+1. Go to [https://xooa.com/blockchain](https://xooa.com/blockchain/custom-smart-contracts?utm_source=samplesRepo) or navigate to **Custom Smart Contracts** from your Xooa console.
+
+2. Click **Deploy New** or select an existing app to upgrade.
+
+3. Once the app is deployed or upgraded successfully, Navigate to **API** tab and select **Sandbox** option and there you will find API Explorer.
+
+4. Paste API token in the required input box and click on **Authorize API** to access swagger REST APIs.
