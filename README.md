@@ -9,6 +9,17 @@ This repository contains a blockchain smart contract, also known as chaincode. U
 
 Xooa provides a permanent cloud end-point for the smart contract, enabling cloud-to-cloud integration, while retaining blockchain's peer-to-peer capabilities.
 
+|Directory                |Description                          |
+|----------------|-------------------------------|
+|[balance-transfer-java](https://github.com/Xooa/samples/tree/master/balance-transfer-java)|Sample smart contract runs on `Hyperledger Fabric` and is written in `Java`. Provides `Invoke`, `query` and `delete` functions.
+|[balance-transfer-node](https://github.com/Xooa/samples/tree/master/balance-transfer-node)          |Sample smart contract runs on `Hyperledger Fabric` and is written in `Node`. Provides `Invoke`, `query` and `delete` functions.           
+|[ethereum](https://github.com/Xooa/samples/tree/master/ethereum)          |Sample smart contract runs on `Ethereum` and is written in `Solidity`. Provides `Get` and `Set` functions.
+|[get-set](https://github.com/Xooa/samples/tree/master/get-set)          |Sample smart contract runs on `Hyperledger Fabric` and is written in `GoLang`. Provides `Get`, `Set` and `GetVersion` methods.
+|[marbles](https://github.com/Xooa/samples/tree/master/marbles)          |Sample smart contract runs on `Hyperledger Fabric` and is written in `GoLang`. Provides 9 functions to interact with marbles app.
+|[smartthings](https://github.com/Xooa/samples/tree/master/smartthings)          |Sample Groovy files  to deploy on smartThings platform. Integrate blockchain to smartThings.
+|[truffle-supplychain](https://github.com/Xooa/samples/tree/master/truffle-supplychain)          |Sample smart contract runs on `Ethereum` and is written in `Solidity` using `Truffle framework`. Provides 5 functions to interact with supply chain app.
+|[upload samples](https://github.com/Xooa/samples/tree/master/upload-samples)          |Sample archives to use while deploying app from `local upload` feature in Xooa console.
+
 ## Deploy the smart contract
 
 
