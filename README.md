@@ -52,7 +52,7 @@ ___
 
 3. Go to the **Smart Contract > Invoke Smart Contract Function** from the navigation pane.
 
-<img src="https://github.com/Xooa/samples/blob/master/images/invoke.gif" alt="Invoke" width="500px"/>
+<img src="https://github.com/Xooa/samples/blob/master/images/invoke.gif" alt="Invoke"/>
 
 4. In the **fcn** field, enter the Smart Contract function name you wish to Invoke. 
 For example, if using this repo **get-set** smart contract to store data in blockchain `set` should be entred as the **fcn** field value 
