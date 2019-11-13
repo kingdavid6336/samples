@@ -4,6 +4,7 @@ This page provides an overview to Xooa Balance-Transfer-Java Smart Contract func
 
 This smart contract runs on `Hyperledger Fabric` and is written in `Java`.
 
+Originally created by IBM and forked from [here](https://github.com/hyperledger/fabric-samples).
 
 ## Overview
 

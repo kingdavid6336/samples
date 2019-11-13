@@ -4,6 +4,7 @@ This page provides an overview to Xooa Marbles Smart Contract functionalities.
 
 This smart contract runs on `Hyperledger Fabric` and is written in `GoLang`.
 
+Originally created by IBM and forked from [here](https://github.com/IBM-Blockchain-Archive/marbles).
 
 ## Overview
 

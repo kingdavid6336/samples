@@ -12,7 +12,7 @@ Xooa provides a permanent cloud end-point for the smart contracts, enabling clou
 |Directory                |Description                          |
 |----------------|-------------------------------|
 |[balance-transfer-java](https://github.com/Xooa/samples/tree/master/balance-transfer-java)|Sample smart contract runs on `Hyperledger Fabric` and is written in `Java`. Provides `Invoke`, `query` and `delete` functions.
-|[balance-transfer-node](https://github.com/Xooa/samples/tree/master/balance-transfer-node)          |Sample smart contract runs on `Hyperledger Fabric` and is written in `Node`. Provides `Invoke`, `query` and `delete` functions.           
+|[balance-transfer-node](https://github.com/Xooa/samples/tree/master/balance-transfer-node)          |Sample smart contract runs on `Hyperledger Fabric` and is written in `Node.js`. Provides `Invoke`, `query` and `delete` functions.           
 |[ethereum](https://github.com/Xooa/samples/tree/master/ethereum)          |Sample smart contract runs on `Ethereum` and is written in `Solidity`. Provides `Get` and `Set` functions.
 |[get-set](https://github.com/Xooa/samples/tree/master/get-set)          |Sample smart contract runs on `Hyperledger Fabric` and is written in `GoLang`. Provides `Get`, `Set` and `GetVersion` methods.
 |[marbles](https://github.com/Xooa/samples/tree/master/marbles)          |Sample smart contract runs on `Hyperledger Fabric` and is written in `GoLang`. Provides 9 functions to interact with marbles app.
