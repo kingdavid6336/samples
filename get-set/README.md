@@ -4,6 +4,7 @@ This page provides an overview to Xooa Get-Set Smart Contract functionalities.
 
 This smart contract runs on `Hyperledger Fabric` and is written in `GoLang`.
 
+Originally created by IBM and forked from [here](https://hyperledger-fabric.readthedocs.io/en/release-1.2/chaincode4ade.html#pulling-it-all-together).
 
 ## Overview
 
