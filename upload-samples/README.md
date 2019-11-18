@@ -10,4 +10,4 @@ Contains archives to be used for local upload feature in Xooa Paas
 
 3. **Balance Transfer** in Java for Hyperledger Fabric
 
-4. **Balance Transfer** in Node.js for Hyperledger Fabric
+4. **Balance Transfer** in JavaScript for Hyperledger Fabric

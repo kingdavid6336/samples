@@ -1,5 +1,5 @@
 /**
- *  Xooa balance transfer Nodejs smart contract
+ *  Xooa balance transfer JavaScript smart contract
  *
  *  Copyright 2019 Xooa
  *

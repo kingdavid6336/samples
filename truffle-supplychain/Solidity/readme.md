@@ -13,5 +13,5 @@
 | `npm i` | Install NPM packages |
 | `npm run lint` | Run the solitity linter (<https://www.npmjs.com/package/solhint>) |
 | `npm run coverage` | Run the solitity coverage (<https://www.npmjs.com/package/solidity-coverage>) |
-| `npm test` | Truffle is used to run Solidity and javascript tests |
+| `npm test` | Truffle is used to run Solidity and JavaScript tests |
 | `npm run build` | Build the contract and generate .abi, .bin and c# files using <https://www.npmjs.com/package/solc> and custom code. |

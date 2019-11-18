@@ -2,7 +2,7 @@
 
 This page provides an overview to Xooa Balance-Transfer-Node Smart Contract functionalities written.
 
-This smart contract runs on `Hyperledger Fabric` and is written in `Node.js`.
+This smart contract runs on `Hyperledger Fabric` and is written in `JavaScript`.
 
 Originally created by IBM and forked from [here](https://github.com/hyperledger/fabric-samples).
 
