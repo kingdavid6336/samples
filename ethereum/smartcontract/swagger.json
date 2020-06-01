@@ -2,7 +2,7 @@
 	"swagger": "2.0",
 	"info": {},
 	"host": "localhost:3002",
-	"basePath": "/api/v1",
+	"basePath": "/api/v2",
 	"paths": {
 		"/invoke/set": {
 			"post": {
