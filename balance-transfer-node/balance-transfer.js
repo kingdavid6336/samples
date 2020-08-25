@@ -65,7 +65,7 @@ var Chaincode = class {
     let method = this[ret.fcn];
     if (!method) {
       console.log('no method of name:' + ret.fcn + ' found');
-      return shim.success();
+      return shim.error(new Error('no method of name:' + ret.fcn + ' found''));
     }
     try {
       let payload = await method(stub, ret.params);
