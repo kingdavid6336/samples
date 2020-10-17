@@ -28,6 +28,19 @@ Apps:
     path: /balance-transfer-node
     language: node
     InitArgs: "[\"a\", \"200\", \"b\",\"100\"]"
+    FunctionAndArgsDefinitions:
+    - functionName: invoke
+      arguments:
+      - name: From
+        description: Account to be debited
+      - name: To
+        description: Account to be credited
+      - name: Amount
+        description: Amount to be transfered
+    - functionName: delete
+      arguments:
+      - name: Account
+        description: Account to be deleted
   Xooa-Balance-Transfer-Java:
     Name: Balance Transfer
     Description: Xooa Balance Transfer
