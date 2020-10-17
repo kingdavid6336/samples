@@ -36,7 +36,7 @@ Apps:
       - name: To
         description: Account to be credited
       - name: Amount
-        description: Amount to be transfered
+        description: Amount to be transferred
     - functionName: delete
       arguments:
       - name: Account
